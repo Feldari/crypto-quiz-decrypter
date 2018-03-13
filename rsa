@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+fin = ''
+b = []
+xlist = [7427, 126, 126, 9196, 7367, 126, 6642, 4744]
+
+for x in xlist:
+    a = lambda x: (x**8743) % 10403
+    b.append(a(x))
+
+for i in b:
+    fin += chr(i)
+
+print(fin)
